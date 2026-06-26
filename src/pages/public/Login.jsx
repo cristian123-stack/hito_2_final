@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
+import { FaPaw } from 'react-icons/fa';
 
 const Login = () => {
   const { login, showNotification } = useApp();
@@ -47,7 +48,7 @@ const Login = () => {
       <header className="w-full flex justify-center py-lg">
         <Link to="/" className="flex items-center gap-xs">
           <div className="h-10 w-10 bg-primary rounded-xl flex items-center justify-center">
-            <span className="material-symbols-outlined text-on-primary text-2xl">pets</span>
+            <FaPaw className="text-on-primary text-xl" />
           </div>
           <span className="text-headline-md font-headline-md text-primary">Pet Store</span>
         </Link>
